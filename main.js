@@ -6,7 +6,11 @@ const links = document.querySelectorAll(".nav-links a");
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     headerLinks.classList.toggle("active");
-    document.body.style.overflow = "hidden"
+    if (document.body.style.overflow == "hidden") {
+        document.body.style.overflow = "auto"
+    } else {
+        document.body.style.overflow = "hidden"
+    }
 });
 
 links.forEach(link => {

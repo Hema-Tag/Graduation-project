@@ -417,7 +417,7 @@ ul li {
         justify-content: start;
         background-position: center bottom 20%;
         background-size: 300px;
-        padding: 150px 5% 0 5%;
+        padding: 100px 5% 0 5%;
         animation: floatMobile 4s ease-in-out infinite;
     }
 
@@ -1021,7 +1021,7 @@ ul li {
 .about-text h3:after {
     content: '';
     position: absolute;
-    bottom: -8px;
+    bottom: -15%;
     left: 0;
     width: 60%;
     height: 3px;
