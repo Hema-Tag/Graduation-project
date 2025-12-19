@@ -3,14 +3,12 @@ const hamburger = document.querySelector(".hamburger");
 const headerLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links a");
 
-// فتح وغلق القائمة عند الضغط على الهامبرجر
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     headerLinks.classList.toggle("active");
     document.body.style.overflow = "hidden"
 });
 
-// غلق القائمة تلقائياً عند الضغط على أي رابط
 links.forEach(link => {
     link.addEventListener("click", () => {
         hamburger.classList.remove("active");
@@ -21,11 +19,10 @@ links.forEach(link => {
 
 
 const teamData = {
-    // صور الفريق الجماعية - ممكن تضيف كتير
     teamPhotos: [
-        "./img/team group/teamgroup_1.jpg", // حط هنا مسار الصورة الأولى: "img/team-photo1.jpg"
-        null, // حط هنا مسار الصورة الثانية: "img/team-photo2.jpg"
-        null  // حط هنا مسار الصورة الثالثة: "img/team-photo3.jpg"
+        "./img/team group/teamgroup_1.webp",
+        null,
+        null
     ],
 
     members: [
@@ -33,7 +30,7 @@ const teamData = {
             name: "Ibrahim Tag",
             role: "Survey Project",
             description: "عمل رفع مساحي للطريق وعمل القطاع الافقي للطريق وعمل بورتفوليو للمشروع.",
-            image: "img/team group/ibrahim-tag.jpg", // حط هنا مسار الصورة: "img/member1.jpg"
+            image: "img/team group/ibrahim-tag.webp",
             initials: "IH",
             social: {
                 facebook: "#",
@@ -45,7 +42,7 @@ const teamData = {
             name: "Abdo AbdelAtty",
             role: "Survey Project",
             description: "عمل رفع مساحي للطريق وعمل كوريدور للطريق.",
-            image: "img/team group/abdo-abdelatty.jpg", // حط هنا مسار الصورة: "img/member1.jpg"
+            image: "img/team group/abdo-abdelatty.webp",
             initials: "IH",
             social: {
                 facebook: "#",
@@ -57,7 +54,7 @@ const teamData = {
             name: "Abo Bakr",
             role: "Survey Project",
             description: " تصميم القطاع الرأسي للطريق وتصميم الميل الطولي للمسار وتجهيز لوحات المشروع وشرح تنفيذ اعمال الطرق في الموقع واختبارات الصلاحية للموارد وعمل رفع مساحي للطريق.",
-            image: "img/team group/Abo-Bakr.jpg",
+            image: "img/team group/Abo-Bakr.webp",
             initials: "AM",
             social: {
                 facebook: "#",
@@ -69,7 +66,7 @@ const teamData = {
             name: "Abo Elhassan Mohamed",
             role: "Survey Project",
             description: "عمل رفع مساحي للطريق وعمل القطاع الافقي للطريق وعمل كتاب للمشروع.",
-            image: "img/team group/Abo-Elhassan-mohamed.jpg",
+            image: "img/team group/Abo-Elhassan-mohamed.webp",
             initials: "SK",
             social: {
                 facebook: "#",
@@ -81,7 +78,7 @@ const teamData = {
             name: "Ahmed Abdelghaffar",
             role: "Survey Project",
             description: "عمل رفع مساحي للطريق وعمل القطاع الافقي للطريق وعمل كتاب للمشروع.",
-            image: "img/team group/ahmed-abdou.jpg",
+            image: "img/team group/ahmed-abdou.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -93,7 +90,7 @@ const teamData = {
             name: "Ahmed Adel",
             role: "Survey Project",
             description: "عمل رفع مساحي للطريق وعمل كروس سيكشن للطريق.",
-            image: "img/team group/ahmed-adel.jpg",
+            image: "img/team group/ahmed-adel.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -105,7 +102,7 @@ const teamData = {
             name: "Ammar Kamal",
             role: "Survey Project",
             description: "عمل رفع مساحي للطريق وعمل كوريدور للطريق.",
-            image: "img/team group/amma-kamal.jpg",
+            image: "img/team group/ammar-kamal.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -117,7 +114,7 @@ const teamData = {
             name: "Eslam Barakat",
             role: "Survey Project",
             description: "حساب كميات الحفر والردم للطريق وعمل تصميم مودلينج ونموذج محاكاة للواقع.",
-            image: "img/team group/eslam-barakat.jpg",
+            image: "img/team group/eslam-barakat.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -129,7 +126,7 @@ const teamData = {
             name: "Hemdan El Sheikh",
             role: "Survey Project",
             description: "حساب كميات الحفر والردم للطريق وعمل تصميم مودلينج ونموذج محاكاة للواقع.",
-            image: "img/team group/hemdan-elsheikh.jpg",
+            image: "img/team group/hemdan-elsheikh.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -141,7 +138,7 @@ const teamData = {
             name: "Moustafa Kasem",
             role: "Survey Project",
             description: "عمل رفع مساحي للطريق وعمل كروس سيكشن للطريق.",
-            image: "img/team group/mostafa-kasem.jpg",
+            image: "img/team group/mostafa-kasem.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -153,7 +150,7 @@ const teamData = {
             name: "Hamed Mohamed",
             role: "Survey Project",
             description: "عمل كروس سيكشن للطريق.",
-            image: "img/team group/Hamed-Mohamed.jpg",
+            image: "img/team group/Hamed-Mohamed.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -165,7 +162,7 @@ const teamData = {
             name: "Moustafa Mahmoud",
             role: "Survey Project",
             description: "عمل قطاع افقي للطريق.",
-            image: "img/team group/moustafa-mahmoud.jpg",
+            image: "img/team group/moustafa-mahmoud.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -177,7 +174,7 @@ const teamData = {
             name: "Omar Ahmed",
             role: "Survey Project",
             description: "عمل الرفع المساحي للطريق وادخال البيانات وعمل تعريف للسطح.",
-            image: "img/team group/omar-ahmed.jpg",
+            image: "img/team group/omar-ahmed.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -189,7 +186,7 @@ const teamData = {
             name: "Ahmed Mahmoud",
             role: "Survey Project",
             description: "عمل الرفع المساحي للطريق وادخال البيانات وعمل تعريف للسطح.",
-            image: "img/team group/Ahmed-Mahmoud.Jpg",
+            image: "img/team group/Ahmed-Mahmoud.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -201,7 +198,7 @@ const teamData = {
             name: "Tarek Kamal",
             role: "Survey Project",
             description: "عمل رفع مساحي للطريق وعمل كوريدور للطريق.",
-            image: "img/team group/tarek-kamal.jpg",
+            image: "img/team group/tarek-kamal.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -213,7 +210,7 @@ const teamData = {
             name: "Youssef Mohamed",
             role: "Survey Project",
             description: "عمل رفع مساحي للطريق وعمل نموذج موديلينج للطريق بواسطة برنامج الارك برو.",
-            image: "img/team group/Youssef-Mohamed.jpg",
+            image: "img/team group/Youssef-Mohamed.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -225,7 +222,7 @@ const teamData = {
             name: "Basha Refa3y",
             role: "Survey Project",
             description: "حساب كميات الحفر والردم للطريق .",
-            image: "img/team group/Basha-Refaey.jpg",
+            image: "img/team group/Basha-Refaey.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -237,7 +234,7 @@ const teamData = {
             name: "Ziad Hosney",
             role: "Survey Project",
             description: "عمل الرفع المساحي للطريق وادخال البيانات وعمل تعريف للسطح.",
-            image: "img/team group/ziad-zaza.jpg",
+            image: "img/team group/ziad-zaza.webp",
             initials: "MA",
             social: {
                 facebook: "#",
@@ -272,7 +269,7 @@ function renderSwiperSlides() {
 
         swiperWrapper.innerHTML += `
             <div class="swiper-slide">
-                <img src="${photo}" alt="Team Photo">
+                <img src="${photo}" alt="Team Photo" loading="lazy">
             </div>
         `;
     });
@@ -327,7 +324,7 @@ function getSocialIcon(platform) {
             <div class="swiper-slide">
                 <div class="team-member">
                     <div class="member-image has-image">
-                        <img src="${member.image}">
+                        <img src="${member.image}" loading="lazy">
                     </div>
                     <h3 class="member-name">${member.name}</h3>
                     <p class="member-role">${member.role}</p>
@@ -341,7 +338,6 @@ function getSocialIcon(platform) {
     });
 }
 function initMembersSwiper() {
-    // لو في Swiper قديم، دمّره عشان يعاد تهيئته
     if (document.querySelector('.membersSwiper').swiper) {
         document.querySelector('.membersSwiper').swiper.destroy(true, true);
     }
@@ -349,7 +345,7 @@ function initMembersSwiper() {
     new Swiper(".membersSwiper", {
         spaceBetween: 30,
         slidesPerView: 3,
-        slidesPerGroup: 3,          // ← هنا بنحط 3 (عدد الكروت في الصف)
+        slidesPerGroup: 3,
         grid: {
             rows: 2,
             fill: 'row'
@@ -367,13 +363,11 @@ function initMembersSwiper() {
             el: ".swiper-pagination",
             clickable: true,
         },
-        // مهم جدًا: الخاصية دي اللي بتخلي السلايدر ينتقل صفحة كاملة
         grid: {
             rows: 2,
             fill: 'row'
         },
-        // إضافة هذه الخاصية عشان يتعامل مع الـ grid صح
-        slidesPerGroupSkip: 3,      // ← هنا السر! تخلي الـ slidesPerGroup يشتغل مع الـ grid
+        slidesPerGroupSkip: 3,
         breakpoints: {
             0: {
                 slidesPerView: 1,
@@ -413,7 +407,7 @@ window.addEventListener("scroll", () => {
         nav.classList.remove("slidedown");
     }
 
-    const scrollMiddle = window.scrollY + window.innerHeight / 2; // نص الشاشة
+    const scrollMiddle = window.scrollY + window.innerHeight / 2;
 
     let current = "";
 
