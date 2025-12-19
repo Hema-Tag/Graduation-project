@@ -415,7 +415,7 @@ ul li {
     .home {
         flex-direction: column;
         justify-content: start;
-        background-position: center bottom;
+        background-position: center bottom 20%;
         background-size: 300px;
         padding: 150px 5% 0 5%;
         animation: floatMobile 4s ease-in-out infinite;
@@ -443,11 +443,11 @@ ul li {
 
     0%,
     100% {
-        background-position: center bottom 0px;
+        background-position: center bottom 20%;
     }
 
     50% {
-        background-position: center bottom 15px;
+        background-position: center bottom 23%;
     }
 }
 
@@ -495,7 +495,7 @@ ul li {
     margin-top: 15px;
 }
 
-/* Team swiper (used in Swiper) */
+/* Team swiper */
 .teamSwiper .swiper-slide {
     display: flex;
     justify-content: center;
@@ -514,7 +514,7 @@ ul li {
     box-shadow: 0 10px 30px rgba(0, 171, 240, 0.3);
 }
 
-/* Team Member Cards (used in Swiper) */
+/* Team Member Cards */
 .team-member {
     background: rgba(255, 255, 255, 0.03);
     border: 2px solid rgba(0, 171, 240, 0.2);
@@ -528,7 +528,6 @@ ul li {
     display: flex;
     flex-direction: column;
     min-height: 420px;
-    /* لتوحيد الارتفاع في الصفوف */
 }
 
 .member-description {
@@ -658,30 +657,23 @@ ul li {
     display: none;
 }
 
-/* Members Swiper Container - نعطي ارتفاع ثابت للسلايدر عشان الـ grid يشتغل كويس */
-/* صغر حجم الكارد عشان تبقى أنيقة ومركزة */
 .team-member {
     background: rgba(255, 255, 255, 0.03);
     border: 2px solid rgba(0, 171, 240, 0.2);
     border-radius: 20px;
     padding: 25px;
-    /* قلّلت البادينج شوية عشان نكسب مساحة */
     text-align: center;
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
     width: 100%;
     max-width: 320px;
-    /* صغرنا العرض من 380px → 320px (أنيق جدًا) */
     height: 420px;
-    /* صغرنا الارتفاع من 480px → 420px */
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    /* إضافة شادو خفيف عشان تبرز أكتر */
 }
 
-/* صورة العضو أصغر شوية */
 .member-image {
     width: 120px;
     /* من 150px → 120px */
@@ -694,12 +686,9 @@ ul li {
     background: linear-gradient(135deg, #1e3a5f 0%, var(--blue-dark) 100%);
 }
 
-/* الخطوط أثقل وأوضح */
 .member-name {
     font-size: 22px;
-    /* من 24px → 22px (لسه كبير وواضح) */
     font-weight: 700;
-    /* زيادة الوزن عشان يبقى أثقل */
     color: #ededed;
     margin-bottom: 8px;
 }
@@ -757,26 +746,21 @@ ul li {
     overflow: hidden;
     width: 100%;
     height: 460px;
-    /* ارتفاع ثابت لكل كارت */
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* الوصف يتمدد وياخد scroll لو طويل جدًا */
 .member-description {
     flex-grow: 1;
     overflow-y: auto;
-    /* لو الوصف طويل يبقى في scroll داخلي */
     padding-right: 10px;
-    /* مسافة للـ scroll bar */
     margin-bottom: 20px;
     font-size: 14px;
     color: #8892b0;
     line-height: 1.6;
 }
 
-/* تحسين الـ scroll bar عشان تبقى أنيقة */
 .member-description::-webkit-scrollbar {
     width: 6px;
 }
@@ -795,7 +779,6 @@ ul li {
     background: #00d0ff;
 }
 
-/* باقي استايلات الكارد (نفس اللي كانت موجودة قبل كده) */
 .team-member:before {
     content: '';
     position: absolute;
@@ -904,7 +887,6 @@ ul li {
     width: 100%;
 }
 
-/* الأسهم */
 .members-prev,
 .members-next {
     position: absolute;
@@ -1044,6 +1026,17 @@ ul li {
     width: 60%;
     height: 3px;
     background: var(--blue-light);
+}
+
+@media (max-width:768px) {
+    .about-text h3 {
+        max-width: 80%;
+    }
+
+    .about-text h3:after {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .about-text p {
